@@ -1,0 +1,604 @@
+
+/*
+*-------------------------------------------------------------
+*
+[Table of contents]
+
+1. Body - General styles
+2. Nav
+3. Header 
+4. Section 1
+5. Section 2
+6. Section 3
+7. Section 4
+8. Footer
+9. MediaQueries
+
+*
+*-------------------------------------------------------------
+*/
+/*
+*-------------------------------------------------------------
+
+*
+*style.css
+*
+Template : Again Landing Template multipropose
+Css 
+Author: Mario Germán Reyes (@mager19)
+Version: 1.0
+Last change: 03/03/15
+*
+
+
+
+
+/* ---------------------------------------------------------------------- */
+/*	Import styles
+/* ---------------------------------------------------------------------- */
+
+@import url("../css/normalize.css");
+
+/* bootstrap.css  - include resetes ( Media querys, grid-responsive,layout).*/
+@import url("../css/bootstrap/bootstrap.css");
+@import url("../css/bootstrap/bootstrap-theme.css");
+
+/* Fonts*/
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,700);
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900);
+
+/* Owl Carousel */
+@import url("../css/owl.carousel.css");
+/* Font Awesome */
+@import url("../css/font-awesome.min.css");
+/* Animate and more*/
+@import url("../css/jquery.navgoco.css");
+@import url("../css/demo.css");
+@import url("../css/animate.css");
+
+
+/* ESTILOS GENERALES*/
+
+
+body{
+	
+	line-height:30px;
+	color:#f5f5f5;
+	background: #fff;
+	font-family: Lato;
+	font-size: 16px;
+	font-weight: 300;
+	
+}
+a{	
+	color: #575757;
+}
+
+p{
+	line-height: 27px;
+	font-weight: lighter;
+	color: #9a9a9a;
+	word-wrap: break-word;
+	font-size: 1.2em;
+}
+h1 {font-size:24px;}
+h2 {font-size: 3em;
+	font-weight: 800px;}
+h3 {font-size:18px;}
+h4 {font-size:16px;}
+h5 {font-size:14px;}
+h6 {font-size:12px;}
+
+h1, h2, h3, h4, h5, h6 {
+	
+	font-weight: 300;
+	line-height: 30px;
+	color: #f5f5f5;
+	margin: 0;	
+}
+img{
+	max-width: 100%;
+}
+.clearfix{
+	width:1px;
+	height:1px;	
+	display:block;
+	clear:both;
+	content:" , ";
+}
+
+
+.contenedor{
+
+	padding: 6em 0;
+}
+
+
+/* 2.0 NAV */
+
+nav{
+
+	background-color: #084C61;
+	color:#f5f5f5;
+}
+
+.logo{
+	
+	color:#e3b505;
+	font-size: 30px;
+	padding-top: 10px;
+}
+
+.menu ul li{
+
+	display: inline-block;
+	list-style: none;
+	margin-left: 3em;
+	padding-top: 10px;
+}
+
+.menu ul li a{
+
+	color:#f2f2f2;
+}
+
+.menu ul li a:hover{
+
+	border-bottom: 1px solid #E3B505;
+	color:#E3B505;
+	text-decoration: none;
+	padding-bottom: 1em;
+
+}
+
+
+/*	3.0 HEADER*/
+
+header{
+
+	background-image: url("../img/header.jpg");
+	min-height: 450px;
+	
+	
+}
+
+header h1{
+
+	color:#E3B505;
+}
+
+.slide{
+
+	background-color: rgba(255,255,255,0.2);
+	margin-top: 3em;
+	padding: 2em;
+	text-align: left;
+}
+
+.slide h2{
+
+	font-size: 2.5em;
+}
+
+.slide h3{
+
+	padding: 1em 0;
+	
+}
+
+.button a{
+
+	background-color: #E3B505;
+	padding: 0.5em 1em;
+	text-decoration: none;
+
+	-webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -o-transition: all linear .4s;
+    transition: all linear .4s;
+}
+
+.button a:hover{
+
+	background-color: #084C61;
+	color:#f5f5f5;
+	font-weight: 600;
+	padding: 0.5em 2em 0.5em 1em;
+}
+
+
+/* Section 1	*/
+
+.section1{
+
+	color:#084C61;
+}
+
+
+.section1 h3{
+
+	color:#084C61;
+	font-size: 42px;
+	line-height: 40px;
+	padding: 0.2em 1.5em;
+	text-align: center;
+}
+
+
+.section1 h4{
+
+	color:#084C61;
+	font-weight: 300;
+	font-style: italic;
+	margin-top: 4em;
+	padding: 0em 1.5em;
+}
+
+.item-section{
+
+	margin-top: 5em;
+	padding-left: 1em;
+}
+
+.item-section img{
+
+	width: 30%;
+}
+
+.item-section h5{
+
+	color:#084C61;
+	font-size: 38px;
+	margin: 0.5em 0; 
+}
+
+.item-section p{
+
+	font-weight: 300;
+	font-size: 15px;
+}
+
+/* Section 2	*/
+
+.section2{
+
+	background-color: #f5f6f8;
+}
+
+.section2 h3{
+
+	color:#084C61;
+	font-size: 42px;
+	line-height: 50px;
+	
+}
+
+.section2 h4{
+
+	color:#084C61;
+	font-weight: 300;
+	font-style: italic;
+	margin-top: 2em;
+	
+}
+
+
+.item-section2{
+
+	margin-top: 5em;
+	margin-left: -15px;
+
+}
+
+.item-section2 img{
+
+	width: 20%;
+}
+
+.item-section2 h5{
+
+	color:#084C61;
+	font-size: 38px;
+	margin: 0.5em 0;
+	margin-left: -15px; 
+}
+
+.item-section2 p{
+
+	font-weight: 300;
+	font-size: 15px;
+	margin-left: -15px;
+}
+
+#wireframe img{
+
+	margin-top: 6em;
+	padding-left: 1em;
+}
+
+
+/* Section 3*/
+
+.section3 h3{
+
+	color:#084C61;
+	font-size: 42px;
+	line-height: 40px;
+	text-align: center;
+}
+
+
+.section3 h4{
+
+	color:#084C61;
+	font-weight: 300;
+	font-style: italic;
+	margin: 2em 0;
+	text-align: center;
+	
+}
+
+
+#Container .mix{
+	display: none;
+}
+
+
+.controls{
+  padding: 2%;
+  color: #4d4d4d;
+}
+
+
+button{
+  display: inline-block;
+  padding: .4em .8em;
+  background: #666;
+  border: 0;
+  color: #ddd;
+  font-size: 16px;
+  font-weight: 300;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button.active{
+  background: #084C61;
+  color:#fff;
+}
+
+button:focus{
+  outline: 0 none;
+}
+
+button + label{
+  margin-left: 1em;
+}
+
+.container1{
+  padding: 2% 2% 0;
+  text-align: justify;
+  font-size: 0.1px;
+  -webkit-backface-visibility: hidden;
+}
+
+.container1:after{
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
+
+.container1 .mix,
+.container1 .gap{
+  display: inline-block;
+  width: 49%;
+}
+
+.container1 .mix{
+  text-align: left;
+  background: #03899c;
+  margin-bottom: 2%;
+  display: none;
+  margin-right: 2em;
+}
+
+
+.container1 .mix.category-1{
+  border-top: 2px solid #4d4d4d;
+}
+
+.container1 .mix.category-2{
+  border-top: 2px solid #4d4d4d;
+}
+
+.container1 .mix:after{
+ 
+}
+
+.container1 .mix:before{
+  content: ' ';
+  display: inline-block;
+  
+}
+
+#portfolio a{
+
+	background-color: #084C61!important;
+	color: #fff;
+	margin-left: 20px;
+}
+
+@media all and (min-width: 420px){
+  .container1 .mix,
+  .container1 .gap{
+    width: 32%;
+  }
+}
+
+@media all and (min-width: 640px){
+  .container1 .mix,
+  .container1 .gap{
+    width: 23.5%;
+  }
+}
+
+
+/* Section 4 */
+
+.section4{
+
+	background-color: #E3B505;
+	color:#fff;
+
+}
+
+.section4 h3{
+
+	font-size: 42px;
+	line-height: 40px;
+	text-align: center;
+}
+
+.section4 p{
+
+	color: #fff;
+	font-weight: 300;
+	margin: 3em 5em;
+	text-align: center;
+
+}
+
+.section4 a{
+
+	background-color: #084C61;
+	color:#fff;
+	padding: 0.5em 1em;
+	text-align: center;
+}
+
+
+
+/* Footer*/
+
+footer{
+
+	background-color: #084C61;
+	color:#fff;
+	padding: 4em 0;
+}
+
+.item-footer h3{
+
+	font-weight: 800;
+	text-transform: capitalize;
+	margin-bottom: 1em;
+}
+
+.item-footer ul li, .item-footer2 ul li{
+
+	list-style: none;
+	text-transform: none;
+
+}
+
+.item-footer ul li a, .item-footer2 ul li a{
+
+	color: #fff;
+}
+
+.item-footer ul li i{
+
+	margin-right: 10px;
+}
+
+.item-footer2 ul li{
+
+	display: inline-block;
+	margin-left: 3.5em;
+	text-align: right;
+
+}
+
+.item-footer2 p{
+
+	color:#f1f1f1;
+	font-size: 14px;
+	font-weight: 300;
+	margin-top: 6em;
+	text-align: right;
+}
+
+
+
+
+/* ---------------------------------------------------------------------- */
+/*  Version 1024px
+/* ---------------------------------------------------------------------- */
+
+@media handheld, only screen and (max-width: 1024px) {	
+
+.menu ul li{
+
+	margin-left: 2em;
+	
+}
+
+}
+
+
+/* ---------------------------------------------------------------------- */
+/*  Version 480px
+/* ---------------------------------------------------------------------- */
+
+@media handheld, only screen and (max-width: 480px) {	
+
+.logo{
+
+	text-align: center;
+}
+
+.menu ul li{
+
+	margin-left: 1em;
+	
+}
+
+#iphones{
+
+	display: none;
+}
+
+.item-section, .item-section2{
+
+	text-align: center;
+
+}
+
+
+
+.item-footer{
+
+	text-align: center;
+}
+
+
+.section1 h3, .item-section h5, .section2 h3, .section2 h5, .section3 h3, .section4 h3 {
+
+	font-size: 22px;
+}
+
+.section4 p{
+	 display: none;
+}
+.section4 a{
+
+	margin-top: 1em;
+}
+
+.item-footer{
+
+	display: none;
+}
+
+
+}
